@@ -2,8 +2,10 @@ import React from "react";
 import "./app.css";
 import Switcher from "../switcher/Switcher"
 import HookSwitcher from "../switcher/Switcher-with-useState";
-import Person from "../person/Person";
-import HookPerson from "../person/Person-with-useState";
+import Person from "../useState/Person";
+import HookPerson from "../useState/Person-with-hook";
+import ContextWithClass from "../useContext/Context-with-class";
+import ContextWithHook from "../useContext/Context-with-hook";
 
 class App extends React.Component {
 
@@ -11,12 +13,17 @@ class App extends React.Component {
 
         return (
             <div className="container">
-                <Switcher />
-                <HookSwitcher />
+                <Switcher/>
+                <HookSwitcher/>
                 <hr/>
-                <Person />
+                <p style={{color: "red"}}>useState example:</p>
+                <Person/>
+                <HookPerson/>
                 <hr/>
-                <HookPerson />
+                <p style={{color: "red"}}>useContext example:</p>
+                <ContextWithClass/>
+                <ContextWithHook/>
+                <hr/>
             </div>
         )
     }
