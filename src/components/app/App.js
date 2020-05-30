@@ -6,6 +6,8 @@ import Person from "../useState/Person";
 import HookPerson from "../useState/Person-with-hook";
 import ContextWithClass from "../useContext/Context-with-class";
 import ContextWithHook from "../useContext/Context-with-hook";
+import ClassCounter from "../useEffect/Effect-with-class";
+import HookCounter from "../useEffect/Effect-with-hook";
 
 class App extends React.Component {
 
@@ -24,6 +26,9 @@ class App extends React.Component {
                 <ContextWithClass/>
                 <ContextWithHook/>
                 <hr/>
+                <p style={{color: "red"}}>useEffect example:</p>
+                <ClassCounter/>
+                <HookCounter/>
             </div>
         )
     }

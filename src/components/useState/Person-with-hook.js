@@ -19,7 +19,7 @@ const HookPerson = () => {
     });
 
     return (
-        <div style={{border: "1px solid white"}}>
+        <div style={{border: "1px solid white", padding: "5px"}}>
             <p>{firstName} {secondName}</p>
             <button
                 onClick={updateName}>
